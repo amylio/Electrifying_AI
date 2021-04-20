@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Analysis</title>
+<link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body class="bg-white">
+    <div class="wrapper">
+        <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Energy Analysis</a>
+        </nav>
+        <div class="jumbotron">
+            <div class="container" style="height: 300px;"></div>
+            <h1 class="text-white" class="display-4">Electric Vehicles and Energy Consumption</h1>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+                 <div class="col-md-8">
+                    <p>
+                        <h4>What is an Electric Vehicle?</h4> 
+                        <br>
+                        
+                        According to Wikipedia <a href="https://en.wikipedia.org/wiki/Electric_vehicle",title="Wikipedia">[1]</a>, "An electric vehicle (EV) is a vehicle that uses 
+                        one or more electric motors or traction motors for propulsion. An electric vehicle may be powered through a collector system by electricity from 
+                        off-vehicle sources, or may be self-contained with a battery, solar panels, fuel cells or an electric generator to convert fuel to electricity. 
+                        EVs include, but are not limited to, road and rail vehicles, surface and underwater vessels, electric aircraft and electric spacecraft."
+                        <!--sup id="cite_ref-1", class="reference"-->
+                        <!--a href="cite"-->
+                        <br><br>
+                        <h4>A quick history lesson...</h4>
+                        <br>
+                        "Electric vehicles first appeared in the mid-19th century. An electric vehicle held the vehicular land speed record until around 1900. The high cost, low top speed, and 
+                        short-range of battery electric vehicles, compared to 20th century internal combustion engine vehicles, led to a worldwide decline in their use as private motor vehicles; 
+                        although electric vehicles have continued to be used in the form of loading and freight equipment and public transport – especially rail vehicles."
+                        <a href="https://en.wikipedia.org/wiki/History_of_the_electric_vehicle",title="History_of_the_electric_vehicle">[2]</a>
+                        <br><br>
+                        <h4>What is in store for the future?</h4>
+                        <br>
+                        As more car manufacturers add EV to their product line, such as Mercedes-Benz <a href="https://www.mbusa.com/en/eq-electric-cars#what-is-eq",title="Mercedes Benz">[3]</a>, it is expected that the penetration of Electric Vehicles
+                        will be the preferred choice. However, does household income detemine ownership? Let's look at the predictive model based on your inputs:     
+                        <br><br>
+                    </p>
+                </div>
+                 <div class="col-md-4">
+                    <li class="bg-success list-group-item">
+                    <label><b><u>Charging Cost:</u></b></label>
+                    <label><small>"Depending on the Southern California Edison rate plan, a 2020 Tesla Model 3 Standard Range Plus, rated at 24 kWh/100 miles, 
+                        would cost as little as <b>$1.44</b> for 50 miles' worth of power if home charging started at 11 p.m. Or it could cost four times as much, <b>$5.88</b>, if the car charged during peak hours."
+                        <a href="https://www.edmunds.com/fuel-economy/the-true-cost-of-powering-an-electric-car.html",title="Charging Cost">[4]</a> If you consider the upfront cost to install a electric vehicle supply equipment (EVSE)
+                        that can range from $1000-$2300, its still a tremendous savings compared to a gasoline vehicle with an average MPG 24.9 <a href="https://www.epa.gov/sites/production/files/2021-01/trends2020-highlight1.png",title="MPG">[5]</a>
+                        . It would require 2 gallons of gasoline at the cost of <b>$7.948</b> (California average <a href="https://gasprices.aaa.com/?state=CA",title="CA Gas Price">[6]</a>). A 35% increase compared to the peak cost of an EV at $5.88.</small></label><br></li>   
+                        <li class="bg-dark text-white list-group-item">
+                            <label><b><u># of Stations:</u></b></label>
+                            <label><small>"Depending on the Southern California Edison rate plan, a 2020 Tesla Model 3 Standard Range Plus, rated at 24 kWh/100 miles, 
+                                would cost as little as <b>$1.44</b> for 50 miles' worth of power if home charging started at 11 p.m. Or it could cost four times as much, <b>$5.88</b>, if the car charged during peak hours."
+                                </small></label><br></li>   
+                            </div>
+            </div>
+        </div>
+
+            <div class="col-md-12">
+                <p>
+                    <h4>ML Prediction Placeholder</h4> 
+                    <br>
+                    
+                </p>
+
+        </div>
+          </div>
+            <div class="container-fluid">
+                <!--div class="col-md-9">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Country</th>
+                                <th>Shape</th>
+                                <th>Duration</th>                                    
+                                <th>Comments</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table--> 
+                    <div class="row">
+                    <div class="col-md-3">
+                        <form class="bg-success">
+                            <p>Filter Search</p>
+   
+                        <ul class="bg-success list-group">
+
+                        <li class="bg-success list-group-item">
+                            <label for="Income">Enter Household Income</label>
+                            <input type="text-dark" placeholder="45000" id="income" />
+                        <!--li class="bg-success list-group-item">
+                            <label for="city">Enter a City</label><br>
+                            <input type="text" placeholder="boulder" id="city" /></li>
+                        <li class="bg-success list-group-item">   
+                            <label for="state">Enter a state</label><br>
+                            <input type="text" placeholder="co" id="state" /></li>
+                        <li class="bg-success list-group-item">
+                            <label for="country">Enter a Country</label><br>
+                            <input type="text" placeholder="us" id="country" /></li>
+                        <li class="bg-success list-group-item">
+                            <label for="shape">Enter a Shape</label><br>
+                            <input type="text" placeholder="circle" id="shape" /></li>
+                        </li--> 
+                        </ul>
+                    </form><br><br>
+                    </div>
+ 
+                        <div class="col-md-12">  
+                        <h4>
+                            <span class="mw-headline" id="References">References</span>
+                        </h4> 
+                        <div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+                            <ol class="references">
+                            <li id="cite_note-1"><span class="mw-cite-backlink">^ <a href="https://en.wikipedia.org/wiki/Electric_vehicle"><span class="cite-accessibility-label">Jump up to: 
+
+                            </span></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r999302996">
+                            .mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .
+                            cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}
+                            .mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation 
+                            cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center
+                            /9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),
+                            url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-subscription,.mw-parser-output .
+                            cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .
+                            cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFShahan2016" class="citation web cs1">Shahan, Zachary (22 November 2016). <a rel="nofollow" class="external text" href="https://cleantechnica.com/2016/11/22/1-million-ev-revolution-begins/">"1 Million Pure EVs Worldwide: EV Revolution Begins!"</a>. Clean Technica<span class="reference-accessdate">. Retrieved <span class="nowrap">23 November</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=1+Million+Pure+EVs+Worldwide%3A+EV+Revolution+Begins%21&amp;rft.pub=Clean+Technica&amp;rft.date=2016-11-22&amp;rft.aulast=Shahan&amp;rft.aufirst=Zachary&amp;rft_id=https%3A%2F%2Fcleantechnica.com%2F2016%2F11%2F22%2F1-million-ev-revolution-begins%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHistory+of+the+electric+vehicle" class="Z3988"></span></span>
+                            </li>
+
+                            </ol></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>  
+</body>
+</html>

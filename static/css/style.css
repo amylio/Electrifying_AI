@@ -1,0 +1,10 @@
+body {
+    
+    color: black;
+}
+
+.jumbotron {
+    background-image: url("../images/gas-vs-electric.png");
+    background-size: 100%100%;
+    text-align: center
+  }
