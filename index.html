@@ -14,10 +14,33 @@
   <link rel="stylesheet" href="static/css/style.css">
 
 </head>
+<!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'About Electric Vehicles')">About Electric Vehicles</button>
+    <!--button class="tablinks" onclick="openCity(event, 'Charging Station Finder')">Charging Station Finder</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button-->
+  </div>
+  
+  <!-- Tab content-->
+  <div id="About Electric Vehicle" class="tabcontent">
+
+   
+  <!--div id="Charging Station Finder" class="tabcontent">
+    <p>Current map of existing stations in California</p>
+    <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Visualization/Images/Map_EV_Stations_CA.PNG">
+    
+  </div-->
+  
+  <!--div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div-->
+
 <body class="bg-white">
     <div class="wrapper">
         <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">Energy Analysis</a>
+            <div id="About Electric Vehicle" class="tabcontent">
+                <a class="navbar-brand" href="index.html">Energy Analysis</a>
         </nav>
         <div class="jumbotron">
             <div class="container" style="height: 300px;"></div>
@@ -49,10 +72,10 @@
                         As more car manufacturers, such as Mercedes-Benz <a href="https://www.mbusa.com/en/eq-electric-cars#what-is-eq",title="Mercedes Benz">[3]</a> add EV to their product line, it is expected that Electric Vehicles
                         will be the preferred choice especially as technology improves so will the look and performance. Take a look at some future concepts that are coming to life in 2022:
                         <br><br>
-                        <label><b><u>Mercedes Benz EQS</u></b></label>
+                        <label><b><u>Mercedes Benz EQS</u></b></label><br>
                         <img src="https://github.com/amylio/Project_Web_Test/blob/main/static/images/2022-EQS-CH-DR.jpg?raw=true">
                         <br><br>
-                        <label><b><u>BMW i4</u></b></label>
+                        <label><b><u>BMW i4</u></b></label><br>
                         <img src="https://github.com/amylio/Project_Web_Test/blob/main/static/images/BMW-2022-SOC-i4-Stats-Tablet.jpg?raw=true"></p>
                 </div>
                  <div class="col-md-3">
@@ -89,7 +112,7 @@
             <div class="col-md-12">
                 <p>
                     <h4>Using Machine Learning to Make a Prediction</h4>
-                    <p>We are look to explore the relationships of many different demographic and environmental variables with electric vehicle ownership 
+                    <p>We are looking to explore the relationships of many different demographic and environmental variables with electric vehicle ownership 
                         and/or electric vehicle charging stations. Will household income be one factor that detemines ownership? Let's see if our predictive model can make that determination 
                         based on your inputs:</p>
                     <br>
@@ -147,7 +170,7 @@
                             cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFShahan2016" class="citation web cs1">Shahan, Zachary (22 November 2016). <a rel="nofollow" class="external text" href="https://cleantechnica.com/2016/11/22/1-million-ev-revolution-begins/">"1 Million Pure EVs Worldwide: EV Revolution Begins!"</a>. Clean Technica<span class="reference-accessdate">. Retrieved <span class="nowrap">23 November</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=1+Million+Pure+EVs+Worldwide%3A+EV+Revolution+Begins%21&amp;rft.pub=Clean+Technica&amp;rft.date=2016-11-22&amp;rft.aulast=Shahan&amp;rft.aufirst=Zachary&amp;rft_id=https%3A%2F%2Fcleantechnica.com%2F2016%2F11%2F22%2F1-million-ev-revolution-begins%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHistory+of+the+electric+vehicle" class="Z3988"></span></span>
                             </li>
 
-                            </ol></div>
+                            </ol></div></div>
                         </div>
                     </div>
                 </div>
