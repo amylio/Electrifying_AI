@@ -30,6 +30,6 @@ body, html {
   }
   
   .tablink:hover {
-    background-color: #777;
+    background-color: red;
   }
   
