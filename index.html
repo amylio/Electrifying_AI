@@ -14,37 +14,19 @@
   <link rel="stylesheet" href="static/css/style.css">
 
 </head>
-<!-- Tab links -->
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'About Electric Vehicles')">About Electric Vehicles</button>
-    <!--button class="tablinks" onclick="openCity(event, 'Charging Station Finder')">Charging Station Finder</button>
-    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button-->
-  </div>
-  
-  <!-- Tab content-->
-  <div id="About Electric Vehicle" class="tabcontent">
 
-   
-  <!--div id="Charging Station Finder" class="tabcontent">
-    <p>Current map of existing stations in California</p>
-    <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Visualization/Images/Map_EV_Stations_CA.PNG">
-    
-  </div-->
-  
-  <!--div id="Tokyo" class="tabcontent">
-    <h3>Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div-->
+<button class="tablink" onclick="openPage('Home', this, 'black')"id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')">News</button>
+<button class="tablink" onclick="openPage('Charging', this, 'blue')">EV Charging Station Locator</button>
+<button class="tablink" onclick="openPage('Consumption', this, 'orange')">Consumption and Impact</button>
+
+<div id="Home" class="tabcontent">
 
 <body class="bg-white">
     <div class="wrapper">
-        <nav class="navbar navbar-dark bg-dark navbar navbar-expand-lg">
-            <div id="About Electric Vehicle" class="tabcontent">
-                <a class="navbar-brand" href="index.html">Energy Analysis</a>
-        </nav>
-        <div class="jumbotron">
+            <div class="jumbotron">
             <div class="container" style="height: 300px;"></div>
-            <h1 class="text-white" class="display-4">Electric Vehicles and Energy Consumption</h1>
+            <h1 class="text-white" class="display-4">All About Electric Vehicles</h1>
           </div>
           <div class="container-fluid">
             <div class="row">
@@ -121,7 +103,8 @@
 
         </div>
           </div>
-            <div class="container-fluid">
+
+           <div class="container-fluid">
                 <!--div class="col-md-9">
                     <table class="table table-striped">
                         <thead>
@@ -177,8 +160,75 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-    <script src="static/js/data.js"></script>
-    <script src="static/js/app.js"></script>  
+<div id="News" class="tabcontent">
+    <div class="wrapper">
+        <div class="jumbotron">
+            <div class="container" style="height: 300px;"></div>
+            <h1 class="text-white" class="display-4">Latest News</h1>
+          </div>
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-md-9">
+                    <p>
+                        <h4>Latest News....</h4> 
+                        <br>
+                        
+                        dsjfkalskdfjkadsjflkasjdflkajsdflkajsdflkjasdlkfjal;skdjf;lkasjdflkajsdflkajsdflkjasdlkfjalksdf
+                        lkajsdflkasjdflkasjdajfdl;asjdflkajsdflkajsdflkjasdlkfjlaksdjflaksdjfl;akdsjf;lasdjf;laksdjf;laksdj
+
+                        <br><br>
+                    </p>
+                </div>
+            </div>       
+        </div>
+    </div>
+</div>
+<div id="Charging" class="tabcontent">
+    <div class="wrapper">
+        <div class="jumbotron">
+            <div class="container" style="height: 300px;"></div>
+            <h1 class="text-white" class="display-4">Charging Station Locator</h1>
+          </div>
+          <div class="container-fluid">
+            <div class="row">
+                 <div class="col-md-9">
+                <p>
+                <h4>Map of Charging Station Locations in California</h4> 
+                <br>
+                        
+                dsjfkalskdfjkadsjflkasjdflkajsdflkajsdflkjasdlkfjal;skdjf;lkasjdflkajsdflkajsdflkjasdlkfjalksdf
+                lkajsdflkasjdflkasjdajfdl;asjdflkajsdflkajsdflkjasdlkfjlaksdjflaksdjfl;akdsjf;lasdjf;laksdjf;laksdj
+                <br><br>
+            </p>
+        </div>
+    </div>       
+</div>
+</div>
+</div>
+<div id="Consumption" class="tabcontent">
+        <div class="wrapper">
+            <div class="jumbotron">
+                <div class="container" style="height: 300px;"></div>
+                <h1 class="text-white" class="display-4">Consumption and Environmental Impact</h1>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                     <div class="col-md-9">
+                    <p>
+                    <h4>Energy Consumption, Environmental Impact, and Emissions</h4> 
+                    <br>
+                            
+                    dsjfkalskdfjkadsjflkasjdflkajsdflkajsdflkjasdlkfjal;skdjf;lkasjdflkajsdflkajsdflkjasdlkfjalksdf
+                    lkajsdflkasjdflkasjdajfdl;asjdflkajsdflkajsdflkjasdlkfjlaksdjflaksdjfl;akdsjf;lasdjf;laksdjf;laksdj
+                    <br><br>
+                </p>
+            </div>
+        </div>       
+    </div>
+</div>
+</div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+            <script src="static/js/data.js"></script>
+            <script src="static/js/app.js"></script>  
 </body>
 </html>
