@@ -11,22 +11,76 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous"
   />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&effect=neon|outline|emboss|shadow-multiple">
   <link rel="stylesheet" href="static/css/style.css">
 
 </head>
 
-<button class="tablink" onclick="openPage('Home', this, 'black')"id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('Map', this, 'green')">Interactive Map</button>
+<button class="tablink" onclick="openPage('About', this, 'blue')"id="defaultOpen">About</button>
+<button class="tablink" onclick="openPage('EV Info', this, 'black')">EV Information</button>
+<button class="tablink" onclick="openPage('Map', this, 'green')">Fuel Type Population Map</button>
 <button class="tablink" onclick="openPage('Charging', this, 'grey')">EV Charging Station Locator</button>
 <button class="tablink" onclick="openPage('Consumption', this, 'orange')">Consumption and Impact</button>
 
-<div id="Home" class="tabcontent">
+<div id="About" class="tabcontent">
+        <div class="wrapper">
+            <div class="row">
+            <div class="col-md-8">
+                <div class="jumbotron" style="background-image: url(https://github.com/amylio/Project_Web_Test/blob/main/static/images/electricplug.jpg?raw=true); 
+            background-size:100%100%;">
+                <div class="container" style="height: 300px;">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="jumbotron" style="background:linear-gradient(to left, green 15%, white 65%)!important;">
+            <div class="container" style="height: 300px;">
+                <h3 class="text-black text-left" class="display-4"><b><u>Project Team</h6></b></u><h6>(in Alphabetical Order)</h6><br>
+                    <h5>Amy Lio - <a href="https://github.com/amylio"target="_blank" rel="noopener noreferrer">Github Link</a><br>
+                        Angela Haverly - <a href="https://github.com/angienoelhaverly"target="_blank" rel="noopener noreferrer">Github Link</a><br>
+                        Daniele Ruiz - <a href="https://github.com/DYRuiz"target="_blank" rel="noopener noreferrer">Github Link</a><br>
+                        Robbe Verhofste - <a href="https://github.com/robbe-verhofste"target="_blank" rel="noopener noreferrer">Github Link</a><br>
+                        Russell Shelley - <a href="https://github.com/RussellShelley"target="_blank" rel="noopener noreferrer">Github Link</a><br>
+                        Valerie Achoa - <a href=""target="_blank" rel="noopener noreferrer">Github Link</a><br>
+            </div></div></div>
+    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                    <div style=font-family:"Audiowide">
+                    <h1 class="font-effect-shadow-multiple"><b><center>Energy Consumption and Electric Vehicle Population</center></b></h1></div>
+                    <h4>The purpose of this project is to explore an overall analysis of the electric vehicle car market, availability of charging stations, 
+                    and potential climate implications. We chose this topic because of its immediate relevance as well as potential large scale global and humanitarian impact.</h4>
+                </p>
+                    </div>
+                <div class="col-md-12">
+                        <p>
+                            <h3><b>Analysis of the Data</b></h3>
+                            In a recent survey conducted in California:
+                            <br><br>
+                            * 63.9% of the owners are in the 35 to 64 age bracket<br><br>
+                            <center><img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/Age_donuts.png?raw=true"></center><br><br>
+                            * There are more male owners than female owners and the majority of the owners have a college or post graduate degree with an average income greater than $100K<br><br>
+                            <center><img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/genderBarpng.png?raw=true">
+                            <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/EducationIncome_.Boxplots.png?raw=true"></center></div>
+   
+                </div>
+                
+            </div>              
+            </div>
+        </div>
+
+</div>
+
+<div id="EV Info" class="tabcontent">
 
 <body class="bg-white">
     <div class="wrapper">
-            <div class="jumbotron">
+            <div class="jumbotron" style="background-image: url(https://github.com/amylio/Project_Web_Test/blob/main/static/images/gas-vs-electric.png?raw=true);
+            background-size: 100%100%; font-family: Audiowide;text-align: center">
             <div class="container" style="height: 300px;"></div>
-            <h1 class="text-white" class="display-4">All About Electric Vehicles</h1>
+            <h1 class="text-white font-effect-outline" class="display-4">All About Electric Vehicles</h1>
           </div>
           <div class="container-fluid">
             <div class="row">
@@ -137,37 +191,29 @@
                         </ul>
                     </form><br><br>
                     </div-->
-                    <!--div class="col-md-12">
-                        <p>
-                            <h4><b>Fun Facts about EV Ownership</b></h4>
-                            In a recent survey conducted in California:
-                            <br><br>
-                            * 63.9% of the owners are in the 35 to 64 age bracket<br><br>
-                            <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/Age_donuts.png?raw=true"><br><br>
-                            * There are more male owners than female owners<br><br>
-                            <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/genderBarpng.png?raw=true"><br><br>
-                            * Majority of the owners have a college or post graduate degree with an average income greater than $100K<br><br>
-                            <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/EducationIncome_.Boxplots.png?raw=true"></div-->
+                    
              
  <div class="container-fluid">
      <div class="row">
-        <div class="col-md-6">                
+        <div class="col-md-9">                
             <div class="jumbotron" style="background:linear-gradient(to right, grey 30%, black 65%)!important;">
             <div class="container" style="height: 50px;">
                 <h2 class="text-warning" class="display-12">Latest News<h4 class="text-white">From <a href="https://www.energy.ca.gov" target="_blank" rel="noopener noreferrer">CA.gov</a> Energy Commission</h4></h2>
-            </div>
+                <!--a class="btn btn-default btn-lg" href="/scrape"
+                role="button"><b>Click Here to Update News</b></a-->
+          </div>  
           </div>
         </div>
-    <div class="col-md-6">
+    <div class="col-md-3">
                         
         <div class="jumbotron" style="background:linear-gradient(to right, grey 30%, black 65%)!important;">
         <div class="container" style="height: 50px;">
-            <h2 class="text-warning" class="display-12">Content References</h2></h1>
+            <h2 class="text-warning" class="display-12">References</h2></h1>
         </div>
 
-                                 <!--div style="background:linear-gradient(to bottom, green 15%, orange 85%)!important" class="jumbotron text-center"-->
+    <!--div style="background:linear-gradient(to bottom, green 15%, orange 85%)!important" class="jumbotron text-center"-->
 
-            <!--p><a class="btn btn-default btn-lg" href="/scrape"
+    <!--p><a class="btn btn-default btn-lg" href="/scrape"
                 role="button"><b>Click for News Update</b></a></p-->
           
           <!--div class="media">
@@ -178,7 +224,16 @@
       </div></div></div>
 <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6"><p>
+          <!--div class="col-md-6">
+          <div class='media'>
+              <div class='media-body'>
+                  <h4 class="media-heading">{{energy.news_title}}</h4>
+                  <p>{{energy.news_paragraph}}</p>
+              </div>
+          </div>
+        </div>
+        </div-->
+        <div class="col-md-9"><p>
         <a href="https://www.energy.ca.gov/news/2021-04/energy-commission-announces-nations-first-incentive-project-zero-emission-truck" target="_blank" rel="noopener noreferrer">Energy Commission Announces Nation’s 
         First Incentive Project for Zero-Emission Truck and Bus Infrastructure</a><br><small>April 13, 2021</small><br>
         <a href="https://www.energy.ca.gov/news/2021-04/california-unveil-50-million-initiative-accelerate-charging-and-refueling-zero" target="_blank" rel="noopener noreferrer">California to Unveil $50 Million Initiative 
@@ -195,7 +250,7 @@
         Trump Administration Amendments to Desert Renewable Energy Conservation Plan</a><br><small>January 13, 2021</small><br>
         </p></div>
 
-        <div class="col-md-6"><p>
+        <div class="col-md-3"><p>
         1. <i><a href="https://en.wikipedia.org/wiki/Electric_vehicle",title="Wikipedia" target="_blank" rel="noopener noreferrer">Wikipedia Page - Electric Vehicles</a></i><br>
         2. <i><a href="https://en.wikipedia.org/wiki/History_of_the_electric_vehicle",title="History_of_the_electric_vehicle" target="_blank" rel="noopener noreferrer">Wikipedia Page - History of the Electric Vehicle</a></i><br>
         3. <i><a href="https://www.mbusa.com/en/eq-electric-cars#what-is-eq",title="Mercedes Benz" target="_blank" rel="noopener noreferrer">Mercedes Benz EQS Press Release</a></i><br>
@@ -273,7 +328,7 @@
             <div class="jumbotron" style="background-image: url(https://cdn1.sph.harvard.edu/wp-content/uploads/sites/2425/2017/05/big-messy-data-1024x300.jpg); 
             background-size:100%100%;">
                 <div class="container" style="height: 100px;"></div>
-                <h1 class="text-white" class="display-4">Energy Consumption, Environmental Impact, and Emissions</h1>
+                <h1 class="text-white text-center" class="display-4">Energy Consumption, Environmental Impact, and Emissions</h1>
               </div>
               <div class="container-fluid">
                 <div class="row">
