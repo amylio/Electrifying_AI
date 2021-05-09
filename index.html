@@ -11,105 +11,47 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous"
   />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&effect=neon|outline|emboss|shadow-multiple">
   <link rel="stylesheet" href="static/css/style.css">
 
 </head>
 
-<button class="tablink" onclick="openPage('About', this, 'blue')"id="defaultOpen">About</button>
-<button class="tablink" onclick="openPage('EV Info', this, 'black')">EV Information</button>
-<button class="tablink" onclick="openPage('Map', this, 'green')">Fuel Type Population Map</button>
+<button class="tablink" onclick="openPage('Home', this, 'black')"id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')">News</button>
 <button class="tablink" onclick="openPage('Charging', this, 'grey')">EV Charging Station Locator</button>
 <button class="tablink" onclick="openPage('Consumption', this, 'orange')">Consumption and Impact</button>
 
-<div id="About" class="tabcontent">
-        <div class="wrapper">
-            <div class="row">
-            <div class="col-md-8">
-                <div class="jumbotron" style="background-image: url(https://github.com/amylio/Project_Web_Test/blob/main/static/images/electricplug.jpg?raw=true); 
-            background-size:100%100%;">
-                <div class="container" style="height: 300px;">
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="jumbotron" style="background:linear-gradient(to left, green 15%, white 65%)!important;">
-            <div class="container" style="height: 300px;">
-                <h3 class="text-black text-left font-effect-shadow-multiple class="display-4" style="font-family: Audiowide "><b><u>Project Team</h6></b></u><h6>(in Alphabetical Order)</h6><br>
-                    <h5 class="ffont-effect-outline">Amy Lio - <a href="https://github.com/amylio"target="_blank" rel="noopener noreferrer">Link to GitHub</a><br>
-                        Angela Haverly - <a href="https://github.com/angienoelhaverly"target="_blank" rel="noopener noreferrer">Link to GitHub</a><br>
-                        Daniele Ruiz - <a href="https://github.com/DYRuiz"target="_blank" rel="noopener noreferrer">Link to GitHub</a><br>
-                        Robbe Verhofste - <a href="https://github.com/robbe-verhofste"target="_blank" rel="noopener noreferrer">Link to GitHub</a><br>
-                        Russell Shelley - <a href="https://github.com/RussellShelley"target="_blank" rel="noopener noreferrer">Link to GitHub</a><br>
-                        Valerie Achoa - <a href="https://github.com/achoav"target="_blank" rel="noopener noreferrer">Link to GitHub</a><br>
-            </div></div></div>
-    </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>
-                    <div style=font-family:"Audiowide">
-                    <h1 class="font-effect-shadow-multiple"><b><center>Energy Consumption and Electric Vehicle Population</center></b></h1></div>
-                    <h4>The purpose of this project is to explore an overall analysis of the electric vehicle car market, availability of charging stations, 
-                    and potential climate implications. We chose this topic because of its immediate relevance as well as potential large scale global and humanitarian impact.</h4>
-                </p>
-                    </div>
-                <div class="col-md-12">
-                        <p>
-                            <h3 style="font-family: Audiowide" class="font-effect-shadow-multiple"><b>Analysis of the Data</b></h3><br>
-                            <h5>Data sourced from the 2019 California Vehicle Survey conducted by California Energy Commission 
-                                (<a href="www.nrel.gov/tsdc">"Transportation Secure Data Center." (2019). National Renewable Energy Laboratory. Accessed [4/20/2021]</a>) showed the
-                                following:
-
-                            <br><br>
-                            <b>* 63.9% of the owners are in the 35-64 age group</b><br><br>
-                            <center><img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/Age_donuts.png?raw=true"></center><br><br>
-                            <b>* There are more male owners than female owners and the majority of the owners have a college or post graduate degree with an average 
-                                income greater than $100K</b></h5><br><br>
-                            <center><img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/genderBarpng.png?raw=true">
-                            <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/EducationIncome_.Boxplots.png?raw=true"></center></div>
-   
-                </div>
-                
-            </div>              
-            </div>
-        </div>
-
-</div>
-
-<div id="EV Info" class="tabcontent">
+<div id="Home" class="tabcontent">
 
 <body class="bg-white">
     <div class="wrapper">
-            <div class="jumbotron" style="background-image: url(https://github.com/amylio/Project_Web_Test/blob/main/static/images/gas-vs-electric.png?raw=true);
-            background-size: 100%100%; font-family: Audiowide;text-align: center">
+            <div class="jumbotron">
             <div class="container" style="height: 300px;"></div>
-            <h1 class="text-white font-effect-outline" class="display-4">All About Electric Vehicles</h1>
+            <h1 class="text-white" class="display-4">All About Electric Vehicles</h1>
           </div>
           <div class="container-fluid">
             <div class="row">
                  <div class="col-md-9">
                     <p>
-                        <h4><b>What is an Electric Vehicle?</b></h4> 
+                        <h4>What is an Electric Vehicle?</h4> 
                         <br>
                         
-                        According to Wikipedia <a href="https://en.wikipedia.org/wiki/Electric_vehicle",title="Wikipedia"target="_blank" rel="noopener noreferrer">[1] </a>, "An electric vehicle (EV) is a vehicle that uses 
+                        According to Wikipedia <a href="https://en.wikipedia.org/wiki/Electric_vehicle",title="Wikipedia">[1]</a>, "An electric vehicle (EV) is a vehicle that uses 
                         one or more electric motors or traction motors for propulsion. An electric vehicle may be powered through a collector system by electricity from 
                         off-vehicle sources, or may be self-contained with a battery, solar panels, fuel cells or an electric generator to convert fuel to electricity. 
                         EVs include, but are not limited to, road and rail vehicles, surface and underwater vessels, electric aircraft and electric spacecraft."
                         <!--sup id="cite_ref-1", class="reference"-->
                         <!--a href="cite"-->
                         <br><br>
-                        <h4><b>Quick History Lesson...</b></h4>
+                        <h4>Quick History Lesson...</h4>
                         <br>
                         "Electric vehicles first appeared in the mid-19th century. An electric vehicle held the vehicular land speed record until around 1900. The high cost, low top speed, and 
                         short-range of battery electric vehicles, compared to 20th century internal combustion engine vehicles, led to a worldwide decline in their use as private motor vehicles; 
                         although electric vehicles have continued to be used in the form of loading and freight equipment and public transport – especially rail vehicles."
-                        <a href="https://en.wikipedia.org/wiki/History_of_the_electric_vehicle",title="History_of_the_electric_vehicle" target="_blank" rel="noopener noreferrer">[2]</a>
+                        <a href="https://en.wikipedia.org/wiki/History_of_the_electric_vehicle",title="History_of_the_electric_vehicle">[2]</a>
                         <br><br>
-                        <h4><b>What is in Store for the Future?</b></h4>
+                        <h4>What is in Store for the Future?</h4>
                         <br>
-                        As more car manufacturers, such as Mercedes-Benz <a href="https://www.mbusa.com/en/eq-electric-cars#what-is-eq",title="Mercedes Benz" target="_blank" rel="noopener noreferrer">[3]</a> add EV to their product line, it is expected that Electric Vehicles
+                        As more car manufacturers, such as Mercedes-Benz <a href="https://www.mbusa.com/en/eq-electric-cars#what-is-eq",title="Mercedes Benz">[3]</a> add EV to their product line, it is expected that Electric Vehicles
                         will be the preferred choice especially as technology improves so will the look and performance. Take a look at some future concepts that are coming to life in 2022:
                         <br><br>
                         <label><b><u>Mercedes Benz EQS</u></b></label><br>
@@ -122,7 +64,7 @@
                     <li class="bg-dark text-white list-group-item">
                         <label><b><u>Total EV Vehicles Sold - 176,174</u></b></label>
                         <label><small>During a 6 month period in 2019 (Jan-July), there were a total of 176,174 vehicles sold with 46% of the sales belonging to the Tesla Model 3 (81K). The 2nd best selling model was the Toyota Prius Prime 
-                            with 6.5% (11.6K) of total sales. <a href="https://insideevs.com/news/362819/ev-sales-scorecard-july-2019/", title="EV ev-sales-scorecard-july-2019" target="_blank" rel="noopener noreferrer">[4]</a>
+                            with 6.5% (11.6K) of total sales. <a href="https://insideevs.com/news/362819/ev-sales-scorecard-july-2019/", title="EV ev-sales-scorecard-july-2019">[4]</a>
                         
                             <br><br>
                         </i></small></label><br></li>
@@ -130,9 +72,9 @@
                     <label><b><u>Charging Cost - $5.88 / 50 miles</u></b></label>
                     <label><small>"Depending on the Southern California Edison rate plan, a 2020 Tesla Model 3 Standard Range Plus, rated at 24 kWh/100 miles, 
                         would cost as little as <b>$1.44</b> for 50 miles' worth of power if home charging started at 11 p.m. Or it could cost four times as much, <b>$5.88</b>, if the car charged during peak hours."
-                        <a href="https://www.edmunds.com/fuel-economy/the-true-cost-of-powering-an-electric-car.html",title="Charging Cost" target="_blank" rel="noopener noreferrer">[5]</a> If you consider the upfront cost to install a electric vehicle supply equipment (EVSE)
-                        that can range from $1000-$2300, its still a tremendous savings compared to a gasoline vehicle with an average MPG 24.9 <a href="https://www.epa.gov/sites/production/files/2021-01/trends2020-highlight1.png",title="MPG" target="_blank" rel="noopener noreferrer">[6]</a>
-                        . It would require 2 gallons of gasoline at the cost of <b>$7.948</b> (California average <a href="https://gasprices.aaa.com/?state=CA",title="CA Gas Price" target="_blank" rel="noopener noreferrer">[7]</a>). A 35% increase compared to the peak cost of an EV at $5.88.
+                        <a href="https://www.edmunds.com/fuel-economy/the-true-cost-of-powering-an-electric-car.html",title="Charging Cost">[5]</a> If you consider the upfront cost to install a electric vehicle supply equipment (EVSE)
+                        that can range from $1000-$2300, its still a tremendous savings compared to a gasoline vehicle with an average MPG 24.9 <a href="https://www.epa.gov/sites/production/files/2021-01/trends2020-highlight1.png",title="MPG">[6]</a>
+                        . It would require 2 gallons of gasoline at the cost of <b>$7.948</b> (California average <a href="https://gasprices.aaa.com/?state=CA",title="CA Gas Price">[7]</a>). A 35% increase compared to the peak cost of an EV at $5.88.
                     
                         <br><br>
                     <i><b>Estimated Annual Cost (60 miles/day for work week and 50 miles over the weekend = 350 miles/week):</b> $2,140.32 for an EV vs. $2,893.07 for a gas vehicle</i></small></label><br></li>   
@@ -140,22 +82,18 @@
                             <label><b><u># of Stations - 13,868</u></b></label>
                             <label><small>There are 13,868 stations in the state of California with 9.5% (1,321) of them in the city of Los Angeles and San Diego with the 2nd highest at 5% (689)
                                 </small></label><br></li>   
-                    <li class="bg-warning list-group-item">
-                    <label><b><u>Incentives</u></b></label>
-                    <label><small> * Federal Tax Credits - $2,500-$7,500 <a href="https://cleanvehiclerebate.org/eng/ev/incentives/state-and-federal",title="state-and-federal" target="_blank" rel="noopener noreferrer">[8]</a><br>
-                        * California Clean Fuel Reward - up to $1,500 <a href="https://cleanfuelreward.com/",title="cleanfuelreward" target="_blank" rel="noopener noreferrer">[9]</a> <br>* Toll Free Express Lane and Carpool Lane Access as a
-                        Single Occupant in the Bay Area 
-                        <a href="https://www.bayareafastrak.org/en/support/clean-air-vehicle.shtml", title="clean-air-vehicle" target="_blank" rel="noopener noreferrer">[10]</a><br>
-                        * Premiere Parking Spot designated for Clean Air Vehicles<br>
-                        * Free Charging Stations available (e.g. airport <a href="https://www.oaklandairport.com/wp-content/uploads/2016/10/EV_FAQs.pdf",title="EV_FAQs" target="_blank" rel="noopener noreferrer">[11]</a>) 
-                        </small></label><br></li>
-                </div>
+                        <li class="bg-warning list-group-item">
+                            <label><b><u>Incentives</u></b></label>
+                            <label><small> * Federal Tax Credits - $2,500-$7,500 <a href="https://cleanvehiclerebate.org/eng/ev/incentives/state-and-federal",title="state-and-federal">[8]</a><br>
+                                * California Clean Fuel Reward - up to $1,500 <a href="https://cleanfuelreward.com/",title="cleanfuelreward">[9]</a>
+                                </small></label><br></li>
+                            </div>
             </div>
         </div>
 
-            <!--div class="col-md-12">
+            <div class="col-md-12">
                 <p>
-                    <h4><b>Using Machine Learning to Make a Prediction</b></h4>
+                    <h4>Using Machine Learning to Make a Prediction</h4>
                     <p>We are looking to explore the relationships of many different demographic and environmental variables with electric vehicle ownership 
                         and/or electric vehicle charging stations. Will household income be one factor that detemines ownership? Let's see if our predictive model can make that determination 
                         based on your inputs:</p>
@@ -182,7 +120,7 @@
                         </thead>
                         <tbody></tbody>
                     </table--> 
-                    <!--div class="row">
+                    <div class="row">
                     <div class="col-md-3">
                         <form class="bg-success">
                             <p>Filter Search</p>
@@ -194,126 +132,198 @@
                             <input type="text-dark" placeholder="45000" id="income" />
                         </ul>
                     </form><br><br>
-                    </div-->
-                    
-             
- <div class="container-fluid">
-     <div class="row">
-        <div class="col-md-9">                
-            <div class="jumbotron" style="background:linear-gradient(to right, grey 30%, black 65%)!important;">
-            <div class="container" style="height: 50px;">
-                <h2 class="text-warning text-center" class="display-12">Latest News<h4 class="text-white text-center">From <a href="https://www.energy.ca.gov" target="_blank" rel="noopener noreferrer">CA.gov</a> Energy Commission</h4></h2>
-                <!--a class="btn btn-default btn-lg" href="/scrape"
-                role="button"><b>Click Here to Update News</b></a-->
-          </div>  
-          </div>
-        </div>
-    <div class="col-md-3">
-                        
-        <div class="jumbotron" style="background:linear-gradient(to right, grey 30%, black 65%)!important;">
-        <div class="container" style="height: 50px;">
-            <h2 class="text-warning text-center" class="display-12">References</h2></h1>
-        </div>
-
-    <!--div style="background:linear-gradient(to bottom, green 15%, orange 85%)!important" class="jumbotron text-center"-->
-
-    <!--p><a class="btn btn-default btn-lg" href="/scrape"
-                role="button"><b>Click for News Update</b></a></p-->
-          
-          <!--div class="media">
-          <div class="media-body">
-              <h4>{{energy.news_title}}</h4>
-          </div>
-      </div-->
-      </div></div></div>
-<div class="container-fluid">
-      <div class="row">
-          <!--div class="col-md-6">
-          <div class='media'>
-              <div class='media-body'>
-                  <h4 class="media-heading">{{energy.news_title}}</h4>
-                  <p>{{energy.news_paragraph}}</p>
-              </div>
-          </div>
-        </div>
-        </div-->
-        <div class="col-md-9"><p>
-        <a href="https://www.energy.ca.gov/news/2021-04/energy-commission-announces-nations-first-incentive-project-zero-emission-truck" target="_blank" rel="noopener noreferrer">Energy Commission Announces Nation’s 
-        First Incentive Project for Zero-Emission Truck and Bus Infrastructure</a><br><small>April 13, 2021</small><br>
-        <a href="https://www.energy.ca.gov/news/2021-04/california-unveil-50-million-initiative-accelerate-charging-and-refueling-zero" target="_blank" rel="noopener noreferrer">California to Unveil $50 Million Initiative 
-        to Accelerate Charging and Refueling for Zero-Emission Trucks and Buses</a><br><small>April 12, 2021</small><br>
-        <a href="https://www.energy.ca.gov/news/2021-03/california-releases-report-charting-path-100-percent-clean-electricity" target="_blank" rel="noopener noreferrer">California Releases Report Charting Path to 100 Percent 
-        Clean Electricity</a><br><small>March 15, 2021</small><br>
-        <a href="https://www.energy.ca.gov/news/2021-02/california-energy-commission-convene-first-meeting-lithium-valley-commission" target="_blank" rel="noopener noreferrer">California Energy Commission to Convene First Meeting of 
-        Lithium Valley Commission</a><br><small>February 24, 2021</small><br>
-        <a href="https://www.energy.ca.gov/news/2021-02/cec-commissioner-douglas-responds-biden-administration-action-restoring-desert" target="_blank" rel="noopener noreferrer">CEC Commissioner Douglas Responds to Biden Administration 
-        Action Restoring the Desert Renewable Energy Conservation Plan</a><br><small>February 17, 2021</small><br>
-        <a href="https://www.energy.ca.gov/news/2021-01/state-awards-2-million-10-california-native-american-tribes-climate-and-clean" target="_blank" rel="noopener noreferrer">State Awards $2 Million to 10 California Native American 
-        Tribes for Climate and Clean Energy Projects</a><br><small>January 14, 2021</small><br>
-        <a href="https://www.energy.ca.gov/news/2021-01/cec-commissioner-douglas-responds-trump-administration-amendments-desert" target="_blank" rel="noopener noreferrer">CEC Commissioner Douglas Responds to 
-        Trump Administration Amendments to Desert Renewable Energy Conservation Plan</a><br><small>January 13, 2021</small><br>
-        </p></div>
-
-        <div class="col-md-3"><p>
-        1. <i><a href="https://en.wikipedia.org/wiki/Electric_vehicle",title="Wikipedia" target="_blank" rel="noopener noreferrer">Wikipedia Page - Electric Vehicles</a></i><br>
-        2. <i><a href="https://en.wikipedia.org/wiki/History_of_the_electric_vehicle",title="History_of_the_electric_vehicle" target="_blank" rel="noopener noreferrer">Wikipedia Page - History of the Electric Vehicle</a></i><br>
-        3. <i><a href="https://www.mbusa.com/en/eq-electric-cars#what-is-eq",title="Mercedes Benz" target="_blank" rel="noopener noreferrer">Mercedes Benz EQS Press Release</a></i><br>
-        4. <i><a href="https://insideevs.com/news/362819/ev-sales-scorecard-july-2019/", title="EV ev-sales-scorecard-july-2019" target="_blank" rel="noopener noreferrer">Inside EV's - Sales Scorecard: July 2019</a></i><br>
-        5. <i><a href="https://www.edmunds.com/fuel-economy/the-true-cost-of-powering-an-electric-car.html",title="Charging Cost" target="_blank" rel="noopener noreferrer">Edmunds.com - The True Cost of Powering An Electric Car</a></i><br>
-        6. <i><a href="https://www.epa.gov/sites/production/files/2021-01/trends2020-highlight1.png",title="MPG" target="_blank" rel="noopener noreferrer">EPA.gov - 2020 MPG Trends</a></i><br>
-        7. <i><a href="https://gasprices.aaa.com/?state=CA",title="CA Gas Price" target="_blank" rel="noopener noreferrer">AAA Gasprices - CA</a></i><br>
-        8. <i><a href="https://cleanvehiclerebate.org/eng/ev/incentives/state-and-federal",title="state-and-federal" target="_blank" rel="noopener noreferrer">Cleanvehiclerebate.org - State and Federal Incentives</a></i><br>
-        9. <i><a href="https://cleanfuelreward.com/",title="cleanfuelreward" target="_blank" rel="noopener noreferrer">Cleanfuelreward.com - Clean Fuel Rewards in the State of California</a></i><br>
-        10. <i><a href="https://www.bayareafastrak.org/en/support/clean-air-vehicle.shtml", title="clean-air-vehicle" target="_blank" rel="noopener noreferrer">Bayareafastrak.org - Clean Air Vehicle Incentives</a></i><br>
-        11. <i><a href="https://www.oaklandairport.com/wp-content/uploads/2016/10/EV_FAQs.pdf",title="EV_FAQs" target="_blank" rel="noopener noreferrer">Oakland Aiport - EV FAQs</a></i><br>
-        </p></div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-    </body>
-
-
-
-<div id="Map" class="tabcontent">
-            <div class="wrapper">
-                <div style="background:linear-gradient(to left, white 10%, rgb(83, 77, 77) 55%)!important" class="jumbotron">
-                    <div class="container" style="height: 20px;"></div>
-                    <h3 class="text-black text-left font-effect-outline" class="display-12">An interactive Tableau visualization of vehicle population by fuel type in the State of California.</h3>
-                    <h5 class="text-warning text-left" class="display-12">Click on the different fuel types to see the map update in real time.</h5>
-                </div>
-
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                <div class="col-md-12"><p>
-                    <div class='tableauPlaceholder' id='viz1620182015120' style='position: relative'><noscript><a href='#'>
-                    <img alt='Electric Vehicle Population as of 4&#47;30&#47;2021(interactive map by Fuel Type) ' 
-                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;El&#47;ElectricVehiclePopulation4302021&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object 
-                    class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> 
-                    <param name='site_root' value='' /><param name='name' value='ElectricVehiclePopulation4302021&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' />
-                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;El&#47;ElectricVehiclePopulation4302021&#47;Sheet1&#47;1.png' /> 
-                    <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
-                    <param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    
-                    var divElement = document.getElementById('viz1620182015120');                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
-                    var scriptElement = document.createElement('script');                    
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);</script></p>
-       
                     </div>
-                </div>       
+ 
+                        <div class="col-md-12">  
+                        <h4>
+                            <span class="mw-headline" id="References">References</span>
+                        </h4> 
+                        <div class="reflist reflist-columns references-column-width" style="column-width: 30em;">
+                            <ol class="references">
+                            <li id="cite_note-1"><span class="mw-cite-backlink">^ <a href="https://en.wikipedia.org/wiki/Electric_vehicle"><span class="cite-accessibility-label">Jump up to: 
+
+                            </span></a></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r999302996">
+                            .mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .
+                            cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}
+                            .mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation 
+                            cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center
+                            /9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),
+                            url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-subscription,.mw-parser-output .
+                            cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .
+                            cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite id="CITEREFShahan2016" class="citation web cs1">Shahan, Zachary (22 November 2016). <a rel="nofollow" class="external text" href="https://cleantechnica.com/2016/11/22/1-million-ev-revolution-begins/">"1 Million Pure EVs Worldwide: EV Revolution Begins!"</a>. Clean Technica<span class="reference-accessdate">. Retrieved <span class="nowrap">23 November</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=1+Million+Pure+EVs+Worldwide%3A+EV+Revolution+Begins%21&amp;rft.pub=Clean+Technica&amp;rft.date=2016-11-22&amp;rft.aulast=Shahan&amp;rft.aufirst=Zachary&amp;rft_id=https%3A%2F%2Fcleantechnica.com%2F2016%2F11%2F22%2F1-million-ev-revolution-begins%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AHistory+of+the+electric+vehicle" class="Z3988"></span></span>
+                            </li>
+
+                            </ol></div></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
+        </div>
+    </div>
+<div id="News" class="tabcontent">
+    <div class="wrapper">
+        <!--div style="background:linear-gradient(to bottom, green 15%, orange 85%)!important" class="jumbotron text-center"-->
+        <div class="jumbotron" style="background-image: url(https://www.ge.com/news/sites/default/files/styles/full_header/public/Reports/2020-03/wind-onshore-48-158-3d-landscape-1-3000px.jpg?itok=MdBGJ3Tk); 
+        background-size:100%100%;">
+            <div class="container" style="height: 200px;"></div>
+            <h1 class="text-black" class="display-12">Latest News</h1>
+            <!--p><a class="btn btn-default btn-lg" href="/scrape"
+                role="button"><b>Click for News Update</b></a></p-->
+          </div>
+                <!--div class="media">
+                <div class="media-body">
+                    <h4>{{energy.news_title}}</h4>
+                </div>
+            </div-->
+            </div>
+        <div class="container-fluid">
+            <div class="row">
+                 <div class="col-md-9">
+                    <p>
+                        
+                        <div  class="abstract" itemscope itemtype="http://schema.org/Thing">
+                            <a href="https://www.energy.ca.gov/news/2021-04/energy-commission-announces-nations-first-incentive-project-zero-emission-truck" target="_blank" rel="noopener noreferrer">
+                              
+                                <div class="abstract-header">
+                                <div class="abstract-title">
+                                   <h3 itemprop="name">Energy Commission Announces Nation’s First Incentive Project for Zero-Emission Truck and Bus Infrastructure </h3>
+                                </div>                   
+                                </div>
+                            </a>
+                                <div class="abstract-body">
+                              
+                                <div class="abstract-description" itemprop="description">
+                                    April 13, 2021
+                                </div>
+                                </div>
+                            
+                        </div>
+                        <br>
+                        <div  class="abstract" itemscope itemtype="http://schema.org/Thing">
+                            <a href="https://www.energy.ca.gov/news/2021-04/california-unveil-50-million-initiative-accelerate-charging-and-refueling-zero" target="_blank" rel="noopener noreferrer">
+                              
+                                <div class="abstract-header">
+                                <div class="abstract-title">
+                                    <h3 itemprop="name">California to Unveil $50 Million Initiative to Accelerate Charging and Refueling for Zero-Emission Trucks and Buses</h3>
+                                </div>
+                                </div>
+                            </a>
+                                <div class="abstract-body">
+                                <div class="abstract-description" itemprop="description">
+                                    April 12, 2021
+                                </div>
+                                </div>
+                        
+                        </div>
+                        <br>
+                        <div  class="abstract" itemscope itemtype="http://schema.org/Thing">
+                            <a href="https://www.energy.ca.gov/news/2021-03/california-releases-report-charting-path-100-percent-clean-electricity" target="_blank" rel="noopener noreferrer">
+                              
+                                <div class="abstract-header">
+                                <div class="abstract-title">
+                                    <h3 itemprop="name">California Releases Report Charting Path to 100 Percent Clean Electricity</h3>
+                                </div>
+                                </div>
+                              
+                            </a>
+                                <div class="abstract-body">
+                              
+                                <div class="abstract-description" itemprop="description">
+                                    March 15, 2021
+                                </div>
+                                </div>
+                        </div>
+                        <br>
+                        <div  class="abstract" itemscope itemtype="http://schema.org/Thing">
+                            <a href="https://www.energy.ca.gov/news/2021-02/california-energy-commission-convene-first-meeting-lithium-valley-commission" target="_blank" rel="noopener noreferrer">
+                              
+                                <div class="abstract-header">
+                                <div class="abstract-title">
+                                   <h3 itemprop="name">California Energy Commission to Convene First Meeting of Lithium Valley Commission</h3>
+                                </div>
+                                </div>
+                              
+                            </a>
+                                <div class="abstract-body">
+                              
+                                <div class="abstract-description" itemprop="description">
+                                    February 24, 2021
+                                </div>
+                                </div>
+                            
+                        </div>
+                        <br>
+                        <div  class="abstract" itemscope itemtype="http://schema.org/Thing">
+                            <a href="https://www.energy.ca.gov/news/2021-02/cec-commissioner-douglas-responds-biden-administration-action-restoring-desert" target="_blank" rel="noopener noreferrer">
+                              
+                                <div class="abstract-header">
+                                <div class="abstract-title">
+                                    <h3 itemprop="name">CEC Commissioner Douglas Responds to Biden Administration Action Restoring the Desert Renewable Energy Conservation Plan</h3>
+                                </div>
+                                </div>
+                              
+                            </a>
+                                <div class="abstract-body">
+                              
+                                <div class="abstract-description" itemprop="description">
+                                    February 17, 2021
+                                </div>
+                                </div>
+                            
+                        </div>
+                        <br>                           
+                        <div  class="abstract" itemscope itemtype="http://schema.org/Thing">
+                            <a href="https://www.energy.ca.gov/news/2021-01/state-awards-2-million-10-california-native-american-tribes-climate-and-clean" target="_blank" rel="noopener noreferrer">
+                              
+                                <div class="abstract-header">
+                                <div class="abstract-title">
+                                    <h3 itemprop="name">State Awards $2 Million to 10 California Native American Tribes for Climate and Clean Energy Projects</h3>
+                                </div>
+                                </div>
+                              
+                            </a>
+                                <div class="abstract-body">
+                              
+                                <div class="abstract-description" itemprop="description">
+                                    January 14, 2021
+                                </div>
+                                </div>
+                            
+                        </div>
+                        <br>
+                        <div  class="abstract" itemscope itemtype="http://schema.org/Thing">
+                            <a href="https://www.energy.ca.gov/news/2021-01/cec-commissioner-douglas-responds-trump-administration-amendments-desert" target="_blank" rel="noopener noreferrer">
+                              
+                                <div class="abstract-header">
+                                <div class="abstract-title">
+                                    <h3 itemprop="name">CEC Commissioner Douglas Responds to Trump Administration Amendments to Desert Renewable Energy Conservation Plan</h3>
+                                </div>
+                                </div>
+                              
+                            </a>
+                                <div class="abstract-body">
+                              
+                                <div class="abstract-description" itemprop="description">
+                                    January 13, 2021
+                                </div>
+                                </div>
+                            
+                        </div>
+                        
+                        </div>
+
+                        <br><br>
+                    </p>
+                </div>
+            </div>       
+        </div>
+    </div>
 </div>
 <div id="Charging" class="tabcontent">
     <div class="wrapper">
-        <div style="background:linear-gradient(to bottom, white 15%, green 85%)!important" class="jumbotron">
+        <div style="background:linear-gradient(to bottom, green 15%, white 85%)!important" class="jumbotron">
             <div class="container" style="height: 20px;"></div>
-            <h2 class="text-white text-left font-effect-outline" class="display-12">Charging Station Locator</h2>
-            <h5 class="text-black text-left" class="display-12">Type in your zipcode to find the nearest stations</h5>
+            <h1 class="text-black" class="display-4">Charging Station Locator</h1>
           </div>
           <div class="container-fluid">
             <div class="row">
@@ -330,17 +340,18 @@
 <div id="Consumption" class="tabcontent">
         <div class="wrapper">
             <div class="jumbotron" style="background-image: url(https://cdn1.sph.harvard.edu/wp-content/uploads/sites/2425/2017/05/big-messy-data-1024x300.jpg); 
-            background-size:100%100%;">
-                <div class="container" style="height: 100px;"></div>
-                <h1 class="text-white text-center font-effect-outline" class="display-4">Energy Consumption, Environmental Impact, and Emissions</h1>
+            background-size:100%100%;">>
+                <div class="container" style="height: 200px;"></div>
+                <h1 class="text-white" class="display-4">Consumption and Environmental Impact</h1>
               </div>
               <div class="container-fluid">
                 <div class="row">
-                     <div class="col-md-12">
+                     <div class="col-md-9">
                     <p>
-                    <h4><b>"Plug-in electric vehicles (also known as electric cars or EVs) can help keep your town and your world clean. In general, EVs produce fewer emissions that contribute to 
-                        climate change and smog than conventional vehicles."</b></h4><br>
-                        <h6>Source: <a href="https://www.energy.gov/eere/electricvehicles/reducing-pollution-electric-vehicles">"Reducing Pollution with Electric Vehicles" - Energy.gov</a></h6></p>
+                    <h4>Energy Consumption, Environmental Impact, and Emissions</h4> 
+                    <br>
+                            
+                    Map placeholder that will plot the relationships of demographic, # of chargers and pollution
                     <br><br>
                 </p>
             </div>
