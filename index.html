@@ -50,9 +50,19 @@
                 <div class="col-md-12">
                     <div style="font-family: Audiowide">
                     <h1 class="font-effect-shadow-multiple"><b>Energy Consumption and Electric Vehicle Population</b></h1></div>
-                    <h5><p id="rcorners2">The purpose of this project is to explore an overall analysis of the electric vehicle car market, availability of charging stations, 
-                    and potential climate implications. We chose this topic because of its immediate relevance as well as potential large scale global and humanitarian impact.</h5>
-                </p>
+                    <h5 id="rcorners2">The purpose of this project is to conduct an overall analysis of the electric vehicle car market, availability of charging stations, potential climate implications and 
+                        use of Machine Learning to make future predictions on likelihood of EV ownership.<br><br>
+                        <ul><span>&#8226;</span>  Electric vehicles currently make up 2% of all cars sold in the US. Many drivers have put off purchasing electric vehicles<br>
+                         for many reasons, such as expense and concerns over the accessibility to charging options (e.g. public charging stations,<br>
+                         in-home setup). However, current trends show that these statistics are likely to change as the automotive market moves to introduce more affordable models.<br>
+                         <span>&#8226;</span>  A global focus on reducing greenhouse gases in support of minimizing climate change.<br>      
+                         <span>&#8226;</span> Most automakers have committed to all of its sales to be zero-emission, electrified vehicles by 2040 with at least 40% of the sales by 2030. 
+                        <small><a href="https://www.consumerreports.org/hybrids-evs/why-electric-cars-may-soon-flood-the-us-market/" target="_blank" rel="noopener noreferrer">[Source]</a></small><br>                      
+                        <span>&#8226;</span> The president’s current infrastructure plan plan intends to bring electric cars fully into the mainstream by spending $174 billion
+                        to promote EVs and build charging stations. <small><a href="https://www.caranddriver.com/news/a36017463/biden-23-trillion-infrastructure-plan-electric-cars/" target="_blank" rel="noopener noreferrer">
+                        [Source]</a></small></h5>
+
+                        </ul>
                     </div>
                 <div class="col-md-12"><br>
                 <h3 style="font-family: Audiowide" class="font-effect-shadow-multiple"><b>Using Machine Learning to Predict Ownership</b></h3><br>
@@ -65,7 +75,7 @@
                 </h5> 
                 </div>
                 <div class="col-md-6"><br>
-                    <h3 style="font-family: Audiowide" class="font-effect-shadow-multiple text-center"><b>Random Forest Algorithm</b></h3><br>
+                    <h3 style="font-family: Audiowide" class="font-effect-shadow-multiple text-center"><b>Random Forest Classifier</b></h3><br>
                     <h5 id="rcorners2"><img src="https://user-images.githubusercontent.com/73972332/116798874-bb633200-aaa8-11eb-9fad-a43f2e36f714.png" width="auto" height="400">
                     </h5> 
                     </div>
@@ -79,25 +89,27 @@
                 <h5>Data sourced from the <a href="https://www.energy.ca.gov/data-reports/surveys/california-vehicle-survey"target="_blank" rel="noopener noreferrer">2019 California Vehicle Survey</a> conducted by California Energy Commission 
                 showed the following:                                                                                                                                                                                                                              
                 <br><br>
-                <p id="rcorners2">* 63.9% of the owners are in the 35-64 age group</p>
-                <center><img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/Age_donuts.png?raw=true"></center><br><br>
-                <p id="rcorners2">* There are more male owners than female owners and the majority of the owners have a college or post graduate degree with an average 
-                       income greater than $100K</h5><br><br></p>
+                <p id="rcorners2"><b>* 63.9% of the owners are in the 35-64 age group</b>
+                <center><img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/Age_donuts.png?raw=true"></center><br><br></p>
+                <p id="rcorners2"><b>* There are more male owners than female owners and the majority of the owners have a college or post graduate degree with an average 
+                       income greater than $100K</b></h5><br><br>
                 <center><img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/genderBarpng.png?raw=true">
-                <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/EducationIncome_.Boxplots.png?raw=true"></center></div>
+                <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/EducationIncome_.Boxplots.png?raw=true"></center></p></div>
    
                 </div>
-                <!--div class="col-md-12"><br>
-                    <h3 style="font-family: Audiowide" class="font-effect-shadow-multiple"><b>Tableau Visualization</b></h3><br>                                                                                                                                                                                               
-                    <br><br>
-                    <div class='tableauPlaceholder' id='viz1620601706264' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CaliforniaEVSurv&#47;Dashboard1&#47;1_rss.png' 
-                    style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
-                    <param name='name' value='CaliforniaEVSurv&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CaliforniaEVSurv&#47;Dashboard1&#47;1.png' /> 
-                    <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                
-                    <script type='text/javascript'>  var divElement = document.getElementById('viz1620601706264'); var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1527px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+                <div class="col-md-12"><br>
+                    <h3 style="font-family: Audiowide" class="font-effect-shadow-multiple"><b>Summary of Findings</b></h3><br>                                                                                                                                                                             
+                    <h5 id="rcorners2">After reviewing all of the data that was collected and analyzing the results, we determined that there were several key variables
+                    that a potential owner took into consideration when they opted to purchase an Electric Vehicle. These variables are:<br><br>
+                    <ul><span>&#8226;</span>  Overall cost of vehicle<br>
+                    <span>&#8226;</span>  Accessibility to charging station or in-home charging options<br>
+                    <span>&#8226;</span>  Size and capacity of vehicle (e.g. ability to fit families with multiple passengers including children)<br>
+                    <span>&#8226;</span>  Tax credits and incentives (e.g. toll free driving, carpool lane and parking access for single occupants, etc.)
+                    <br></ul>
+                    By finding the key variables and comparing those demographics to geographic data such as number of EV Charging Stations, we can propose to public policy makers where might be the next best markets for installing charging stations.
+                    
        
-                    </div-->
+                    </div>
                 
             </div>              
             </div>
