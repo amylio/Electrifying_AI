@@ -13,6 +13,15 @@
   />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong&effect=neon|outline|emboss|shadow-multiple">
   <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+ integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+ crossorigin=""></script>
+  <link rel="stylesheet" href="static/css/style1.css">
+  <!--link rel="import" href="static/js/index2.html"-->
 
 </head>
 
@@ -102,8 +111,8 @@
                 <p id="rcorners2"><b>There are more male owners than female owners and the majority of the owners have a college or post graduate degree with an average 
                        income greater than $100K</b></h5><br><br>
                 <center><img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/Gender_dualy.png?raw=true">
-                <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/EducationIncome_Boxplots(cb).png?raw=true"></center></p></div>
-   
+                <img src="https://github.com/RussellShelley/Energy_Analysis/blob/main/Images/Seaborn_Visual_PNGs/EducationIncome_Boxplots(cb).png?raw=true"></center></p-->
+                  
                 </div>
                 <div class="col-md-12"><br>
                     <h3 style="font-family: Audiowide" class="font-effect-shadow-multiple"><b>Summary of Findings</b></h3><br>                                                                                                                                                                             
@@ -386,10 +395,36 @@
                 <div class="row">
                      <div class="col-md-12">
                     <p>
-                    <h4><b>"Plug-in electric vehicles (also known as electric cars or EVs) can help keep your town and your world clean. In general, EVs produce fewer emissions that contribute to 
+                    <!--h4><b>"Plug-in electric vehicles (also known as electric cars or EVs) can help keep your town and your world clean. In general, EVs produce fewer emissions that contribute to 
                         climate change and smog than conventional vehicles."</b></h4><br>
-                        <h6>Source: <a href="https://www.energy.gov/eere/electricvehicles/reducing-pollution-electric-vehicles">"Reducing Pollution with Electric Vehicles" - Energy.gov</a></h6></p>
-                    <br><br>
+                        <h6>Source: <a href="https://www.energy.gov/eere/electricvehicles/reducing-pollution-electric-vehicles">"Reducing Pollution with Electric Vehicles" - Energy.gov</a></h6-->
+                        
+                    <h2 class="text-black font-effect-shadow-multiple"><b>Better in the Long-Run, But Even EV's Have an Ecological Impact.</b></h4>
+                    <h9>Before exploring the nuances of electric vehicles, let's be straight: if you're going to purchase a new (or used) car, purchasing (and using) an electric vehicle will 
+                        have significantly lower negative impacts to the environment than an a gasoline-powered vehice. However, that doesn't mean *no* impact - the production of any good 
+                        results in some (positive or negative) environmental impact and cars - both electric and gas-powered, are massive machines that are produced on a collosal scale. 
+                        In the U.S. alone (in 2018), there were 279 million registered cars on the road.
+                        <a href="https://hedgescompany.com/automotive-market-research-statistics/auto-mailing-lists-and-marketing/",title="History_of_the_electric_vehicle" target="_blank" rel="noopener noreferrer">[1]</a>
+                                    
+                        While electric vehicles have much greater energy efficiency as opposed to gas-powered vehicles over their entire lifespan, the CO2 expenditure required to produce one is 
+                        between 15-68% greater than it's gas-powered counterparts. Both gas-powered and EVs have similar components, but EVs also contain a large lithium-ion battery.
+                        <a href="https://www.politifact.com/factchecks/2021/may/11/viral-image/producing-electric-cars-battery-does-not-emit-same/",title="History_of_the_electric_vehicle" target="_blank" rel="noopener noreferrer">[2]</a> 
+                        It is sourcing and producing these batteries can result in significant environmental impacts.</h9><br><br>
+                        <H4><i>So where does the lithium for our electric vehicles come from? Explore the map below to find out:</i></H4>
+                    <br>
+                                    <!--Leaflet CSS -->
+                <div id="mapid"></div>
+                <!-- Leaflet JavaScript -->
+                <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+                integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+                   crossorigin=""></script>
+                <!-- API key -->
+                <script type="text/javascript" src="static/js/config.js"></script>
+                <!-- d3 JavaScript -->
+                <script src="https://d3js.org/d3.v5.min.js"></script>
+                <!-- Our JavaScript -->
+                <script type="text/javascript" src="static/js/logic.js"></script>
+                <script type="text/javascript" src="static/js/config.js"></script>
                 </p>
             </div>
         </div>       
